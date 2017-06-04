@@ -1,0 +1,22 @@
+/*******************************************************************/
+/* Created: June 2 2017 by Troy Center, troycenter1@gmail.com.     */
+/* COding Dojo practice with external images, paired programming.  */
+/*******************************************************************/
+
+/***************************************************/
+/*               CSS reset settings                */
+/***************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#pokearea {
+    width: 1000px;
+    height: 2000px;
+    background-color: grey;
+}
+footer {
+    font-size: 8px;
+    font-weight: lighter;
+}
