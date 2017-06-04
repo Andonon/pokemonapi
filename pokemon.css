@@ -21,7 +21,6 @@
 #pokemain {
     width: 1300px;
     height: 2600px;
-    background-color: green;
 
 }
 #pokearea {
@@ -40,8 +39,6 @@
     display: inline-block;
     position: fixed;
     float: right;
-
-
 }
 
 footer {
