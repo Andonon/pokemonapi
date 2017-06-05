@@ -30,7 +30,9 @@
                 console.log("Types Name from Array:");
                 for(var i = 0; i < pokeinfo.types.length; i++){
                     console.log(pokeinfo.types[i].name);
-                }
+                    
+            }
+
                 
                 ////////////////////////////////
                 //  get the weight            //
