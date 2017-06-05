@@ -1,10 +1,13 @@
 "use strict";
   
+// After page load, get the pokemons. 
+
     $(document).ready(function(){ 
         getPokes();                
 
     }); 
 
+// get pokemon function 
         function getPokes(){
             // Get the pokemon by adding HTML to the div pokearea.
             for(var pokeid = 1; pokeid <= 151; pokeid++){
@@ -12,10 +15,21 @@
             }
         }
 
+// on clicking one of the pokemon, update the DOM html to show the info on the pokemon in the red box.  
+
         $(document).on("click", "img", function(){ 
+
+// get the pokeid from the html that already loaded with getPokes()
+
             var thispokeid = $(this).attr("pokeid");
-            alert("detected pokeid"+thispokeid);
+
+// contact the API to get information for the clicked poke.
+
             $.get("http://pokeapi.co/api/v1/pokemon/"+thispokeid+"/", function(pokeinfo) {
+
+// use the API info to populate the information box. 
+
+            var thispokename = pokeinfo.name;
             $("#pokename").append("<h2>"+pokeinfo.name+"</h2>");
             $("#mainpokeimage").attr("src","http://pokeapi.co/media/img/"+thispokeid+".png");
             for(var i = 0; i < pokeinfo.types.length; i++){
