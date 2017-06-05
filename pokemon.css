@@ -10,7 +10,14 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Acme;
 }
+
+/***************************************************/
+/*    CSS for title bar                            */
+/***************************************************/
+
+
 #titlebar {
     height: 50px; 
     width: 1300px; 
@@ -18,10 +25,15 @@
     background-image: linear-gradient(75deg, darkgrey,grey);
     position: fixed;
 }
+
+/***************************************************/
+/*    CSS pokemon list, id's are in pokeid field   */
+/***************************************************/
+
 #pokemain {
     width: 1300px;
     height: 2600px;
-
+    font-family: Acme;
 }
 #pokearea {
     width: 1000px;
@@ -30,16 +42,49 @@
     display: inline-block;
     margin-top: 50px;
 }
+
+
+/***************************************************/
+/*     CSS Information Area (in red border)      */
+/***************************************************/
+
 #pokeinfo {
     border: 25px solid red;
     background-color: white;
     margin-top: 50px;
     width: 250px;
-    height: 500px;
+    height: 600px;
     display: inline-block;
     position: fixed;
     float: right;
 }
+
+#pokeinfo h2 {
+    text-align: center;
+    margin: 15px;
+}
+#pokeinfo img {
+    margin: auto;
+    width: 80px;
+    display: block;
+}
+#pokeinfo h3 {
+    margin: 10px 15px;
+}
+
+#pokeinfo ul {
+    list-style: none;
+    margin-left: 20px;
+}
+#pokeinfo p {
+    margin-left: 20px
+
+
+}
+
+/***************************************************/
+/*               CSS footer                        */
+/***************************************************/
 
 footer {
     font-size: 8px;
